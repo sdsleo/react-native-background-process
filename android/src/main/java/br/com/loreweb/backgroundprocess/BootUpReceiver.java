@@ -1,4 +1,4 @@
-package com.reactlibrary;
+package br.com.loreweb.backgroundprocess;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -8,6 +8,6 @@ public class BootUpReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
-        context.startService(new Intent(context, HeartbeartService.class));
+        context.startService(new Intent(context, BackgroundProcessService.class));
     }
 }

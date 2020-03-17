@@ -1,4 +1,4 @@
-package com.reactlibrary;
+package br.com.loreweb.backgroundprocess;
 
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.NativeModule;
@@ -9,13 +9,12 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-
-public class HeartbeatPackage implements ReactPackage {
+public class BackgroundProcessPackage implements ReactPackage {
 
     @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
         return Arrays.<NativeModule>asList(
-                new HeartbeatModule(reactContext)
+                new BackgroundProcessModule(reactContext)
         );
     }
 

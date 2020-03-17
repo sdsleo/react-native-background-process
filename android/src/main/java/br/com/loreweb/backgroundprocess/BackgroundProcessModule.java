@@ -1,4 +1,4 @@
-package com.reactlibrary;
+package br.com.loreweb.backgroundprocess;
 
 import android.app.Application;
 import android.content.Intent;
@@ -11,12 +11,12 @@ import com.facebook.react.bridge.ReactMethod;
 
 import javax.annotation.Nonnull;
 
-public class HeartbeatModule extends ReactContextBaseJavaModule {
+public class BackgroundProcessModule extends ReactContextBaseJavaModule {
 
     public static final String REACT_CLASS = "BackgroundProcess";
     private static ReactApplicationContext reactContext;
 
-    public HeartbeatModule(@Nonnull ReactApplicationContext reactContext) {
+    public BackgroundProcessModule(@Nonnull ReactApplicationContext reactContext) {
         super(reactContext);
         this.reactContext = reactContext;
     }
@@ -29,18 +29,18 @@ public class HeartbeatModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public void startService(
-            String msgTitle,
-            String msgBody,
-            String smallIcon,
-            String largeIcon,
-            String colorIcon,
-            int interval
+        String msgTitle,
+        String msgBody,
+        String smallIcon,
+        String largeIcon,
+        String colorIcon,
+        int interval
     ) {
         Application applicationContext = (Application) reactContext.getApplicationContext();
 
         final Bundle bundle = new Bundle();
 
-        Intent serviceIntent = new Intent(this.reactContext, HeartbeartService.class);
+        Intent serviceIntent = new Intent(this.reactContext, BackgroundProcessService.class);
         serviceIntent.putExtra("msgTitle", msgTitle);
         serviceIntent.putExtra("msgBody", msgBody);
         serviceIntent.putExtra("smallIcon", smallIcon);
@@ -53,6 +53,6 @@ public class HeartbeatModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public void stopService() {
-        this.reactContext.stopService(new Intent(this.reactContext, HeartbeartService.class));
+        this.reactContext.stopService(new Intent(this.reactContext, BackgroundProcessService.class));
     }
 }

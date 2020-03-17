@@ -1,4 +1,4 @@
-package com.reactlibrary;
+package br.com.loreweb.backgroundprocess;
 
 import android.app.Notification;
 import android.app.PendingIntent;
@@ -23,17 +23,17 @@ import androidx.core.app.NotificationCompat;
 import com.facebook.react.HeadlessJsTaskService;
 import com.facebook.react.ReactActivity;
 
-public class HeartbeartService extends Service {
+public class BackgroundProcessService extends Service {
 
     private static final int SERVICE_NOTIFICATION_ID = 12345;
-    private static final String CHANNEL_ID = "HEARTBEAT";
+    private static final String CHANNEL_ID = "background-process";
 
     private Handler handler = new Handler();
     private Runnable runnableCode = new Runnable() {
         @Override
         public void run() {
             Context context = getApplicationContext();
-            Intent myIntent = new Intent(context, HeartbeatEventService.class);
+            Intent myIntent = new Intent(context, BackgroundProcessEventService.class);
             context.startService(myIntent);
             HeadlessJsTaskService.acquireWakeLockNow(context);
             handler.postDelayed(this, 5000);
@@ -44,8 +44,8 @@ public class HeartbeartService extends Service {
         // the NotificationChannel class is new and not in the support library
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             int importance = NotificationManager.IMPORTANCE_DEFAULT;
-            NotificationChannel channel = new NotificationChannel(CHANNEL_ID, "HEARTBEAT", importance);
-            channel.setDescription("CHANEL DESCRIPTION");
+            NotificationChannel channel = new NotificationChannel(CHANNEL_ID, "background-process", importance);
+            channel.setDescription("Descricao da notificacao que esta sendo apresentada.");
             NotificationManager notificationManager = getSystemService(NotificationManager.class);
             notificationManager.createNotificationChannel(channel);
         }
@@ -80,7 +80,6 @@ public class HeartbeartService extends Service {
         NotificationCompat.Builder notification = new NotificationCompat.Builder(this, CHANNEL_ID)
                 .setContentTitle(extras.getString("msgTitle"))
                 .setContentText(extras.getString("msgBody"))
-//                .setSmallIcon(R.mipmap.ic_launcher)
                 .setContentIntent(contentIntent)
                 .setOngoing(true);
 
