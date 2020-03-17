@@ -1,23 +1,23 @@
 {
   "name": "react-native-background-process",
   "title": "React Native Background Process",
-  "version": "1.0.0",
-  "description": "TODO",
+  "version": "0.0.1",
+  "description": "Aplicação para rodar em tempo real e a todo momento uma função javascript no react-native",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/github_account/react-native-background-process.git",
-    "baseUrl": "https://github.com/github_account/react-native-background-process"
+    "url": "git+https://github.com/sdsleo/react-native-background-process.git",
+    "baseUrl": "https://github.com/sdsleo/react-native-background-process"
   },
   "keywords": [
     "react-native"
   ],
   "author": {
-    "name": "Your Name",
-    "email": "yourname@email.com"
+    "name": "Leonardo Santos",
+    "email": "sds.leo2@gmail.com"
   },
   "license": "MIT",
   "licenseFilename": "LICENSE",

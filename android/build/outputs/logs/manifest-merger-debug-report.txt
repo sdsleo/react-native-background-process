@@ -1,0 +1,89 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/sdsleo/Downloads/rn-heartbeat/react-native-background-process/example/node_modules/react-native-background-process/android/src/main/AndroidManifest.xml:1:1-29:12
+INJECTED from /Users/sdsleo/Downloads/rn-heartbeat/react-native-background-process/example/node_modules/react-native-background-process/android/src/main/AndroidManifest.xml:1:1-29:12
+INJECTED from /Users/sdsleo/Downloads/rn-heartbeat/react-native-background-process/example/node_modules/react-native-background-process/android/src/main/AndroidManifest.xml:1:1-29:12
+INJECTED from /Users/sdsleo/Downloads/rn-heartbeat/react-native-background-process/example/node_modules/react-native-background-process/android/src/main/AndroidManifest.xml:1:1-29:12
+INJECTED from /Users/sdsleo/Downloads/rn-heartbeat/react-native-background-process/example/node_modules/react-native-background-process/android/src/main/AndroidManifest.xml:1:1-29:12
+INJECTED from /Users/sdsleo/Downloads/rn-heartbeat/react-native-background-process/example/node_modules/react-native-background-process/android/src/main/AndroidManifest.xml:1:1-29:12
+INJECTED from /Users/sdsleo/Downloads/rn-heartbeat/react-native-background-process/example/node_modules/react-native-background-process/android/src/main/AndroidManifest.xml:1:1-29:12
+	package
+		ADDED from /Users/sdsleo/Downloads/rn-heartbeat/react-native-background-process/example/node_modules/react-native-background-process/android/src/main/AndroidManifest.xml:1:70-96
+		INJECTED from /Users/sdsleo/Downloads/rn-heartbeat/react-native-background-process/example/node_modules/react-native-background-process/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/sdsleo/Downloads/rn-heartbeat/react-native-background-process/example/node_modules/react-native-background-process/android/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/sdsleo/Downloads/rn-heartbeat/react-native-background-process/example/node_modules/react-native-background-process/android/src/main/AndroidManifest.xml
+		ADDED from /Users/sdsleo/Downloads/rn-heartbeat/react-native-background-process/example/node_modules/react-native-background-process/android/src/main/AndroidManifest.xml:1:1-29:12
+		INJECTED from /Users/sdsleo/Downloads/rn-heartbeat/react-native-background-process/example/node_modules/react-native-background-process/android/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/sdsleo/Downloads/rn-heartbeat/react-native-background-process/example/node_modules/react-native-background-process/android/src/main/AndroidManifest.xml
+		ADDED from /Users/sdsleo/Downloads/rn-heartbeat/react-native-background-process/example/node_modules/react-native-background-process/android/src/main/AndroidManifest.xml:1:1-29:12
+		INJECTED from /Users/sdsleo/Downloads/rn-heartbeat/react-native-background-process/example/node_modules/react-native-background-process/android/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/sdsleo/Downloads/rn-heartbeat/react-native-background-process/example/node_modules/react-native-background-process/android/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/sdsleo/Downloads/rn-heartbeat/react-native-background-process/example/node_modules/react-native-background-process/android/src/main/AndroidManifest.xml:3:5-67
+	android:name
+		ADDED from /Users/sdsleo/Downloads/rn-heartbeat/react-native-background-process/example/node_modules/react-native-background-process/android/src/main/AndroidManifest.xml:3:22-64
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from /Users/sdsleo/Downloads/rn-heartbeat/react-native-background-process/example/node_modules/react-native-background-process/android/src/main/AndroidManifest.xml:4:5-81
+	android:name
+		ADDED from /Users/sdsleo/Downloads/rn-heartbeat/react-native-background-process/example/node_modules/react-native-background-process/android/src/main/AndroidManifest.xml:4:22-78
+uses-permission#android.permission.WAKE_LOCK
+ADDED from /Users/sdsleo/Downloads/rn-heartbeat/react-native-background-process/example/node_modules/react-native-background-process/android/src/main/AndroidManifest.xml:5:5-68
+	android:name
+		ADDED from /Users/sdsleo/Downloads/rn-heartbeat/react-native-background-process/example/node_modules/react-native-background-process/android/src/main/AndroidManifest.xml:5:22-65
+uses-permission#android.permission.FOREGROUND_SERVICE
+ADDED from /Users/sdsleo/Downloads/rn-heartbeat/react-native-background-process/example/node_modules/react-native-background-process/android/src/main/AndroidManifest.xml:6:5-77
+	android:name
+		ADDED from /Users/sdsleo/Downloads/rn-heartbeat/react-native-background-process/example/node_modules/react-native-background-process/android/src/main/AndroidManifest.xml:6:22-74
+application
+ADDED from /Users/sdsleo/Downloads/rn-heartbeat/react-native-background-process/example/node_modules/react-native-background-process/android/src/main/AndroidManifest.xml:8:5-27:19
+activity#com.facebook.react.devsupport.DevSettingsActivity
+ADDED from /Users/sdsleo/Downloads/rn-heartbeat/react-native-background-process/example/node_modules/react-native-background-process/android/src/main/AndroidManifest.xml:9:7-84
+	android:name
+		ADDED from /Users/sdsleo/Downloads/rn-heartbeat/react-native-background-process/example/node_modules/react-native-background-process/android/src/main/AndroidManifest.xml:9:17-81
+service#com.reactlibrary.HeartbeartService
+ADDED from /Users/sdsleo/Downloads/rn-heartbeat/react-native-background-process/example/node_modules/react-native-background-process/android/src/main/AndroidManifest.xml:10:9-14:19
+	android:enabled
+		ADDED from /Users/sdsleo/Downloads/rn-heartbeat/react-native-background-process/example/node_modules/react-native-background-process/android/src/main/AndroidManifest.xml:12:13-35
+	android:exported
+		ADDED from /Users/sdsleo/Downloads/rn-heartbeat/react-native-background-process/example/node_modules/react-native-background-process/android/src/main/AndroidManifest.xml:13:13-37
+	android:name
+		ADDED from /Users/sdsleo/Downloads/rn-heartbeat/react-native-background-process/example/node_modules/react-native-background-process/android/src/main/AndroidManifest.xml:11:13-62
+service#com.reactlibrary.HeartbeatEventService
+ADDED from /Users/sdsleo/Downloads/rn-heartbeat/react-native-background-process/example/node_modules/react-native-background-process/android/src/main/AndroidManifest.xml:15:9-17:19
+	android:name
+		ADDED from /Users/sdsleo/Downloads/rn-heartbeat/react-native-background-process/example/node_modules/react-native-background-process/android/src/main/AndroidManifest.xml:16:13-66
+receiver#com.reactlibrary.BootUpReceiver
+ADDED from /Users/sdsleo/Downloads/rn-heartbeat/react-native-background-process/example/node_modules/react-native-background-process/android/src/main/AndroidManifest.xml:18:9-26:20
+	android:enabled
+		ADDED from /Users/sdsleo/Downloads/rn-heartbeat/react-native-background-process/example/node_modules/react-native-background-process/android/src/main/AndroidManifest.xml:20:13-35
+	android:permission
+		ADDED from /Users/sdsleo/Downloads/rn-heartbeat/react-native-background-process/example/node_modules/react-native-background-process/android/src/main/AndroidManifest.xml:21:13-75
+	android:name
+		ADDED from /Users/sdsleo/Downloads/rn-heartbeat/react-native-background-process/example/node_modules/react-native-background-process/android/src/main/AndroidManifest.xml:19:13-59
+intent-filter#action:name:android.intent.action.BOOT_COMPLETED+category:name:android.intent.category.DEFAULT
+ADDED from /Users/sdsleo/Downloads/rn-heartbeat/react-native-background-process/example/node_modules/react-native-background-process/android/src/main/AndroidManifest.xml:22:13-25:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from /Users/sdsleo/Downloads/rn-heartbeat/react-native-background-process/example/node_modules/react-native-background-process/android/src/main/AndroidManifest.xml:23:17-79
+	android:name
+		ADDED from /Users/sdsleo/Downloads/rn-heartbeat/react-native-background-process/example/node_modules/react-native-background-process/android/src/main/AndroidManifest.xml:23:25-76
+category#android.intent.category.DEFAULT
+ADDED from /Users/sdsleo/Downloads/rn-heartbeat/react-native-background-process/example/node_modules/react-native-background-process/android/src/main/AndroidManifest.xml:24:17-76
+	android:name
+		ADDED from /Users/sdsleo/Downloads/rn-heartbeat/react-native-background-process/example/node_modules/react-native-background-process/android/src/main/AndroidManifest.xml:24:27-73
+uses-sdk
+INJECTED from /Users/sdsleo/Downloads/rn-heartbeat/react-native-background-process/example/node_modules/react-native-background-process/android/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/sdsleo/Downloads/rn-heartbeat/react-native-background-process/example/node_modules/react-native-background-process/android/src/main/AndroidManifest.xml
+INJECTED from /Users/sdsleo/Downloads/rn-heartbeat/react-native-background-process/example/node_modules/react-native-background-process/android/src/main/AndroidManifest.xml
+INJECTED from /Users/sdsleo/Downloads/rn-heartbeat/react-native-background-process/example/node_modules/react-native-background-process/android/src/main/AndroidManifest.xml
+INJECTED from /Users/sdsleo/Downloads/rn-heartbeat/react-native-background-process/example/node_modules/react-native-background-process/android/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/sdsleo/Downloads/rn-heartbeat/react-native-background-process/example/node_modules/react-native-background-process/android/src/main/AndroidManifest.xml
+		ADDED from /Users/sdsleo/Downloads/rn-heartbeat/react-native-background-process/example/node_modules/react-native-background-process/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/sdsleo/Downloads/rn-heartbeat/react-native-background-process/example/node_modules/react-native-background-process/android/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/sdsleo/Downloads/rn-heartbeat/react-native-background-process/example/node_modules/react-native-background-process/android/src/main/AndroidManifest.xml
+		ADDED from /Users/sdsleo/Downloads/rn-heartbeat/react-native-background-process/example/node_modules/react-native-background-process/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/sdsleo/Downloads/rn-heartbeat/react-native-background-process/example/node_modules/react-native-background-process/android/src/main/AndroidManifest.xml

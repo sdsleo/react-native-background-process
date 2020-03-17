@@ -9,12 +9,12 @@ Pod::Spec.new do |s|
   s.description  = <<-DESC
                   react-native-background-process
                    DESC
-  s.homepage     = "https://github.com/github_account/react-native-background-process"
+  s.homepage     = "https://github.com/sdsleo/react-native-background-process"
   s.license      = "MIT"
   # s.license    = { :type => "MIT", :file => "FILE_LICENSE" }
-  s.authors      = { "Your Name" => "yourname@email.com" }
+  s.authors      = { "Leonardo Santos" => "sds.leo2@gmail.com" }
   s.platforms    = { :ios => "9.0" }
-  s.source       = { :git => "https://github.com/github_account/react-native-background-process.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/sdsleo/react-native-background-process.git", :tag => "#{s.version}" }
 
   s.source_files = "ios/**/*.{h,m,swift}"
   s.requires_arc = true
