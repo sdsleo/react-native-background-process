@@ -43,7 +43,7 @@ activity#com.facebook.react.devsupport.DevSettingsActivity
 ADDED from /Users/sdsleo/Downloads/rn-heartbeat/react-native-background-process/example/node_modules/react-native-background-process/android/src/main/AndroidManifest.xml:9:7-84
 	android:name
 		ADDED from /Users/sdsleo/Downloads/rn-heartbeat/react-native-background-process/example/node_modules/react-native-background-process/android/src/main/AndroidManifest.xml:9:17-81
-service#com.reactlibrary.HeartbeartService
+service#br.com.loreweb.backgroundprocess.HeartbeartService
 ADDED from /Users/sdsleo/Downloads/rn-heartbeat/react-native-background-process/example/node_modules/react-native-background-process/android/src/main/AndroidManifest.xml:10:9-14:19
 	android:enabled
 		ADDED from /Users/sdsleo/Downloads/rn-heartbeat/react-native-background-process/example/node_modules/react-native-background-process/android/src/main/AndroidManifest.xml:12:13-35
@@ -51,11 +51,11 @@ ADDED from /Users/sdsleo/Downloads/rn-heartbeat/react-native-background-process/
 		ADDED from /Users/sdsleo/Downloads/rn-heartbeat/react-native-background-process/example/node_modules/react-native-background-process/android/src/main/AndroidManifest.xml:13:13-37
 	android:name
 		ADDED from /Users/sdsleo/Downloads/rn-heartbeat/react-native-background-process/example/node_modules/react-native-background-process/android/src/main/AndroidManifest.xml:11:13-62
-service#com.reactlibrary.HeartbeatEventService
+service#br.com.loreweb.backgroundprocess.HeartbeatEventService
 ADDED from /Users/sdsleo/Downloads/rn-heartbeat/react-native-background-process/example/node_modules/react-native-background-process/android/src/main/AndroidManifest.xml:15:9-17:19
 	android:name
 		ADDED from /Users/sdsleo/Downloads/rn-heartbeat/react-native-background-process/example/node_modules/react-native-background-process/android/src/main/AndroidManifest.xml:16:13-66
-receiver#com.reactlibrary.BootUpReceiver
+receiver#br.com.loreweb.backgroundprocess.BootUpReceiver
 ADDED from /Users/sdsleo/Downloads/rn-heartbeat/react-native-background-process/example/node_modules/react-native-background-process/android/src/main/AndroidManifest.xml:18:9-26:20
 	android:enabled
 		ADDED from /Users/sdsleo/Downloads/rn-heartbeat/react-native-background-process/example/node_modules/react-native-background-process/android/src/main/AndroidManifest.xml:20:13-35
