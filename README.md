@@ -13,5 +13,7 @@
 import BackgroundProcess from 'react-native-background-process';
 
 // TODO: What to do with the module?
-BackgroundProcess;
+BackgroundProcess.run({
+    
+});
 ```
