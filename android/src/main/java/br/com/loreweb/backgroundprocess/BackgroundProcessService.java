@@ -13,7 +13,6 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.IBinder;
-//import androidx.core.app.NotificationCompat;
 import android.app.NotificationManager;
 import android.app.NotificationChannel;
 import android.os.Build;
@@ -26,7 +25,7 @@ import com.facebook.react.ReactActivity;
 public class BackgroundProcessService extends Service {
 
     private static final int SERVICE_NOTIFICATION_ID = 12345;
-    private static final String CHANNEL_ID = "background-process";
+    private static final String CHANNEL_ID = "loreweb-background-process";
 
     private Handler handler = new Handler();
     private Runnable runnableCode = new Runnable() {
@@ -40,11 +39,9 @@ public class BackgroundProcessService extends Service {
         }
     };
     private void createNotificationChannel() {
-        // Create the NotificationChannel, but only on API 26+ because
-        // the NotificationChannel class is new and not in the support library
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             int importance = NotificationManager.IMPORTANCE_DEFAULT;
-            NotificationChannel channel = new NotificationChannel(CHANNEL_ID, "background-process", importance);
+            NotificationChannel channel = new NotificationChannel(CHANNEL_ID, "loreweb-background-process", importance);
             channel.setDescription("Descricao da notificacao que esta sendo apresentada.");
             NotificationManager notificationManager = getSystemService(NotificationManager.class);
             notificationManager.createNotificationChannel(channel);

@@ -12,13 +12,14 @@ const RNBackgroundProcess = {
         interval = 5000,
         task
     }) => {
-        
         const fn = async () => {
             task();
         } 
-
         AppRegistry.registerHeadlessTask('BackgroundProcess', () => fn);
         BackgroundProcess.startService(msgTitle, msgBody, smallIcon, largeIcon, colorIcon, interval);
+    },
+    stop: () => {
+        BackgroundProcess.stopService();
     }
 }
 
