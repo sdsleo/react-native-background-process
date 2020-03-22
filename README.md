@@ -4,6 +4,10 @@
 
 `$ npm install react-native-background-process --save`
 
+ou 
+
+`$ yarn add react-native-background-process`
+
 ### Mostly automatic installation
 
 `$ react-native link react-native-background-process`
