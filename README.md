@@ -4,7 +4,7 @@
 
 `$ npm install react-native-background-process --save`
 
-ou 
+ou
 
 `$ yarn add react-native-background-process`
 
