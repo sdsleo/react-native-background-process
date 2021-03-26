@@ -16,9 +16,10 @@ public class BackgroundProcessEventService extends HeadlessJsTaskService {
         Bundle extras = intent.getExtras();
         WritableMap data = Arguments.createMap();
         return new HeadlessJsTaskConfig(
-                "BackgroundProcess",
-                extras != null ? Arguments.fromBundle(extras) : data,
-                20000,
-                true);
+            "BackgroundProcess",
+            extras != null ? Arguments.fromBundle(extras) : data,
+            20000,
+            true
+        );
     }
 }

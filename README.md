@@ -1,31 +1,29 @@
 # react-native-background-process
+Create a constantly running background task to fetch realtime.
 
+<br>
 ## Getting started
 
 `$ npm install react-native-background-process --save`
 
-ou
+or
 
 `$ yarn add react-native-background-process`
-
-### Mostly automatic installation
-
-`$ react-native link react-native-background-process`
 
 ## Usage
 ```javascript
 import BackgroundProcess from 'react-native-background-process';
 
-// Montando processo.
 BackgroundProcess.run({
-    msgTitle: "Background Process", //("padrao Background Process") insira o titulo da notificação  
-    msgBody: "Rodando em Background", // ("padrao Rodando em Background") insira o corpo da notificacao
-    largeIcon: null, // ("padrao res/mipmap/ic_launcher") insira um icone grande para subustituir o icone padrao do app 
-    smallIcon: null, // ("padrao res/mipmap/ic_notification") insira um icone pequeno para subustituir o icone padrao do app
-    colorIcon = null, // ("padrao #black") insira uma cor para o icone pequeno 
-    process: () => {} // insira a funcionalidade que ira rodar, sua função terá o tempo de 5 segundos para concluir e reiniciar.
+    msgTitle: "Background Process", //(default Background Process) enter the notification title  
+    msgBody: "Running in the Background", // (default Running in the Background) enter the notification body
+    interval: 5000, // (default 0) interval time to restart the execution of the process
+    process: function() { // (required)
+        console.log("I'm working")
+        // your code here
+    }
 });
 
-// Parando processo
+// Stop Process
 BackgroundProcess.stop();
 ```

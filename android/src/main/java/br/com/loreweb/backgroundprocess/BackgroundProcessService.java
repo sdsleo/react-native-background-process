@@ -28,6 +28,7 @@ public class BackgroundProcessService extends Service {
     private static final String CHANNEL_ID = "loreweb-background-process";
 
     private Handler handler = new Handler();
+    private Integer timer = 0;
     private Runnable runnableCode = new Runnable() {
         @Override
         public void run() {
@@ -35,9 +36,10 @@ public class BackgroundProcessService extends Service {
             Intent myIntent = new Intent(context, BackgroundProcessEventService.class);
             context.startService(myIntent);
             HeadlessJsTaskService.acquireWakeLockNow(context);
-            handler.postDelayed(this, 5000);
+            handler.postDelayed(this, timer);
         }
     };
+
     private void createNotificationChannel() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             int importance = NotificationManager.IMPORTANCE_DEFAULT;
@@ -67,18 +69,18 @@ public class BackgroundProcessService extends Service {
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
-
         Bundle extras = intent.getExtras();
+        timer = extras.getInt("interval");
         this.handler.post(this.runnableCode);
         createNotificationChannel();
         Intent notificationIntent = new Intent(this, ReactActivity.class);
         PendingIntent contentIntent = PendingIntent.getActivity(this, 0, notificationIntent, PendingIntent.FLAG_CANCEL_CURRENT);
 
         NotificationCompat.Builder notification = new NotificationCompat.Builder(this, CHANNEL_ID)
-                .setContentTitle(extras.getString("msgTitle"))
-                .setContentText(extras.getString("msgBody"))
-                .setContentIntent(contentIntent)
-                .setOngoing(true);
+            .setContentTitle(extras.getString("msgTitle"))
+            .setContentText(extras.getString("msgBody"))
+            .setContentIntent(contentIntent)
+            .setOngoing(true);
 
         Context context = getApplicationContext();
 
@@ -89,11 +91,11 @@ public class BackgroundProcessService extends Service {
         int smallIconResId;
         int largeIconResId;
 
-        String largeIcon = extras.getString("largeIcon");
         String smallIcon = extras.getString("smallIcon");
-            smallIconResId = (smallIcon != null)
-                    ? res.getIdentifier(smallIcon, "mipmap", packageName)
-                    : res.getIdentifier("ic_notification", "mipmap", packageName);
+        
+        smallIconResId = (smallIcon != null)
+            ? res.getIdentifier(smallIcon, "mipmap", packageName)
+            : res.getIdentifier("ic_notification", "mipmap", packageName);
 
         if (smallIconResId == 0) {
             smallIconResId = res.getIdentifier("ic_launcher", "mipmap", packageName);
@@ -103,15 +105,20 @@ public class BackgroundProcessService extends Service {
             }
         }
 
-        if (largeIcon != null) {
-            largeIconResId = res.getIdentifier(largeIcon, "mipmap", packageName);
-        } else {
-            largeIconResId = res.getIdentifier("ic_launcher", "mipmap", packageName);
-        }
+        
+        String largeIcon = extras.getString("largeIcon");
+        
+        largeIconResId = (largeIcon != null)
+            ? res.getIdentifier(largeIcon, "mipmap", packageName)
+            : res.getIdentifier("ic_launcher", "mipmap", packageName);
+        
 
         Bitmap largeIconBitmap = BitmapFactory.decodeResource(res, largeIconResId);
 
-        if (largeIconResId != 0 && (largeIcon != null || Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP)) {
+        if (
+            largeIconResId != 0 && 
+            (largeIcon != null || Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP)
+        ) {
             notification.setLargeIcon(largeIconBitmap);
         }
 
@@ -127,7 +134,6 @@ public class BackgroundProcessService extends Service {
                 notification.setColor(Color.parseColor("#000000"));
             }
         }
-
 
         startForeground(SERVICE_NOTIFICATION_ID, notification.build());
         return START_STICKY;

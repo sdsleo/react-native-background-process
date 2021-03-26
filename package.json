@@ -1,7 +1,7 @@
 {
   "name": "react-native-background-process",
   "title": "React Native Background Process",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Aplicação para rodar em tempo real e a todo momento uma função javascript no react-native",
   "main": "index.js",
   "scripts": {
